@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Music Flow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <main class="app">
+
+
+        <!-- =========================
+             HEADER
+        ========================== -->
+
+        <header class="header">
+
+            <h1>Music Flow</h1>
+
+            <p>Music Visualizer</p>
+
+        </header>
+
+
+        <!-- =========================
+             YOUTUBE
+        ========================== -->
+
+        <section class="player-input">
+
+            <input
+                id="youtubeUrl"
+                type="text"
+                placeholder="Dán link YouTube vào đây..."
+            >
+
+            <button id="loadButton">
+                PLAY
+            </button>
+
+        </section>
+
+
+        <!-- =========================
+             LOCAL AUDIO
+        ========================== -->
+
+        <section class="local-player">
+
+            <label for="audioFile">
+                Chọn file nhạc
+            </label>
+
+            <input
+                id="audioFile"
+                type="file"
+                accept="audio/*"
+            >
+
+        </section>
+
+
+        <!-- =========================
+             VISUALIZER
+        ========================== -->
+
+        <section class="visualizer">
+
+            <canvas
+                id="visualizerCanvas"
+            ></canvas>
+
+        </section>
+
+
+        <!-- =========================
+             AUDIO
+        ========================== -->
+
+        <audio
+            id="audioPlayer"
+            controls
+        ></audio>
+
+
+        <!-- =========================
+             CONTROLS
+        ========================== -->
+
+        <section class="controls">
+
+            <button id="prevButton">
+                ◀
+            </button>
+
+            <button
+                id="playButton"
+                class="play-button"
+            >
+                ▶
+            </button>
+
+            <button id="nextButton">
+                ▶
+            </button>
+
+        </section>
+
+
+        <!-- =========================
+             MUSIC INFO
+        ========================== -->
+
+        <section class="music-info">
+
+            <h2 id="musicTitle">
+                No music
+            </h2>
+
+            <p id="musicArtist">
+                Chọn một file MP3 để bắt đầu
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+
+    <script src="js/visualizer.js"></script>
+
+
+</body>
+
+</html>
